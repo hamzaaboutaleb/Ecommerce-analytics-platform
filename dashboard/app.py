@@ -37,7 +37,7 @@ from sqlalchemy import create_engine, text
 # ============================================================
 st.set_page_config(
     page_title="E-Commerce Analytics Platform",
-    page_icon="📊",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -131,7 +131,7 @@ def get_distinct(col, table):
 # ============================================================
 # SIDEBAR FILTERS
 # ============================================================
-st.sidebar.title("📊 Filters")
+st.sidebar.title("Filters")
 
 min_date, max_date = get_filter_bounds()
 
@@ -156,7 +156,7 @@ sel_devices = st.sidebar.multiselect("Device", devices, default=[])
 
 st.sidebar.markdown("---")
 st.sidebar.caption("Data refreshes every 10 minutes. Use the button below to force a refresh.")
-if st.sidebar.button("🔄 Refresh data"):
+if st.sidebar.button(" Refresh data"):
     st.cache_data.clear()
     st.rerun()
 
@@ -180,7 +180,7 @@ WHERE_SQL = " AND ".join(where_clauses)
 # ============================================================
 # HEADER
 # ============================================================
-st.title("🛒 E-Commerce Analytics Platform")
+st.title(" E-Commerce Analytics Platform")
 st.caption(f"Showing data from **{start_date}** to **{end_date}**")
 
 tab_overview, tab_cohort, tab_rfm, tab_funnel, tab_marketing = st.tabs(

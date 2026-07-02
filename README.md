@@ -127,8 +127,7 @@ python src\etl\load_data.py
 ```
 This reads all 7 CSVs from `data\raw\`, cleans them, and loads them into PostgreSQL.
 
-> 📸 **Screenshot placeholder** — capture your terminal output showing a successful ETL run.
-> `![ETL run](docs/screenshots/etl_run.png)`
+![alt text](images/imagex.png)
 
 ### 9. Launch the dashboard
 ```cmd
@@ -148,7 +147,7 @@ Then open the local URL Streamlit prints (usually `http://localhost:8501`).
 | **Funnel** | Clickstream-to-purchase conversion funnel |
 | **Marketing** | Revenue, conversion rate, and AOV by acquisition source |
 
-> 📸 **Screenshot placeholders** — add one screenshot per tab:
+>  **Screenshot placeholders** — add one screenshot per tab:
 > - ![alt text](images/image-1.png)
 > - ![alt text](images/image-2.png)
 > - ![alt text](images/image-4.png)
